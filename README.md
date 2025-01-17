@@ -1,5 +1,19 @@
 # SecretVault
-## Provide secure storage and management of environment variables
+- Provide secure storage and management of environment variables
+
+## Technologies
+### Front End
+     - Vite
+     - TailwindCSS
+     - DaisyUI
+     - React
+     - React Router
+
+### Backend
+     - Express
+     - MongoDB
+     - Cloudinary
+     - AWS
 
 ## Access management
      Role-based access control: Admin, Readonly, contributer
