@@ -1,8 +1,8 @@
 export default function LandingPage() {
     return (
-        <div className="space-y-[10%]">
-            <div className="mt-[15%] flex">
-                <div className="flex flex-col mx-[10%] lg:w-1/2">
+        <div className="space-y-[10%] overflow-x-hidden">
+            <div className="mt-[15%] flex justify-between h-min">
+                <div className="flex flex-col mx-[10%]">
                     <h1 className="font-medium text-3xl mb-[4%]">
                         <p>
                             Store & Manage Your
@@ -45,14 +45,14 @@ export default function LandingPage() {
                     </div>
                 </div>
 
-                <div>
-                    <img src="/homepage-1.svg" className="w-[100%]" />
+                <div className="flex items-stretch">
+                    <img src="/homepage-1.svg" className="object-cover w-[60%]"/>
                 </div>
             </div>
 
             <div className="flex">
                 <div className="flex flex-col">
-                    <h2>
+                    <h2 className="font-medium text-2xl">
                         Safe, Secure & Powerful
                     </h2>
 
@@ -86,13 +86,13 @@ export default function LandingPage() {
                         </div>
                     </div>
                 </div>
-              
-                <img src="/homepage-2.svg" className="w-[100%]" />
+                <img src="/homepage-2.svg" className="w-[50%]" />
             </div>
 
             <div className="flex">
+            <img src="/homepage-3.svg" className="w-[50%]" />
                 <div className="flex flex-col">
-                    <h2>Access Management</h2>
+                    <h2 className="font-medium text-2xl">Access Management</h2>
                     <p>
                         Whether you’re collaborating with a small team or managing a large
                         organization, RBAC ensures that each user has the right permissions,
@@ -113,12 +113,12 @@ export default function LandingPage() {
                         <strong>Read-Only:</strong> Can view environment variables but cannot modify or delete them.
                     </p>
                 </div>
-                <img src="/homepage-3.svg" className="w-[100%]" />
             </div>
 
             <div className="flex">
+            <img src="/homepage-4.svg" className="w-[50%]" />
                 <div className="flex flex-col">
-                    <h2>Version Control & Backups</h2>
+                    <h2 className="font-medium text-2xl">Version Control & Backups</h2>
                     <p>
                         <strong>Audit Logs:</strong> Stay informed with detailed logs that track every 
                         action taken on your environment variables—whether it’s an 
@@ -141,13 +141,12 @@ export default function LandingPage() {
                          just a few clicks, minimizing downtime and errors in your applications.
                     </p>
                 </div>
-                <img src="/homepage-4.svg" className="w-[100%]" />
             </div>
 
             <div className="flex">
-                <img src="/homepage-4.svg" className="w-[100%]" />
+                <img src="/homepage-5.svg" className="w-[50%]" />
                 <div className="flex flex-col">
-                    <h2>API & Cloud Integration</h2>
+                    <h2 className="font-medium text-2xl">API & Cloud Integration</h2>
                     
                     <p>
                         <strong>Fetch, update and manage</strong> your environment variables programmatically with
