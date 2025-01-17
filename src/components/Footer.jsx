@@ -1,5 +1,5 @@
 import { FaGithub, FaFigma, FaLinkedin } from "react-icons/fa"
-
+import { IoIosMail } from "react-icons/io"
 export default function Footer() {
     return (
         <footer className="footer footer-center bg-base-200 text-base-content rounded p-10">
@@ -9,17 +9,19 @@ export default function Footer() {
                 <a className="link link-hover">Contact</a>
             </nav>
 
-            <nav>
-                {/* Github figma linkedin */}
+            <nav> 
                 <div className="grid grid-flow-col gap-4">
-                    <a>
+                    <a href="https://github.com/woooocoder/SecretVault/tree/main">
                         <FaGithub size={30} />
                     </a>
-                    <a>
+                    <a href="https://www.figma.com/design/2hR3T26Tyb3irolKBJ5JzM/SecretVault?node-id=108-1324&t=3hHrQ3zMQRZPWjMk-0">
                         <FaFigma size={30} />
                     </a>
-                    <a>
+                    <a href="https://www.linkedin.com/in/reese-woodrow/">
                         <FaLinkedin size={30} />
+                    </a>
+                    <a href="https://woodrow7reese@gmail.com">
+                        <IoIosMail size={30} />
                     </a>
                 </div>
             </nav>
