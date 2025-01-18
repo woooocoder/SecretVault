@@ -79,7 +79,7 @@ export default function LandingPage() {
         <img src="/homepage-2.svg" className="w-[35%]" />
       </div>
 
-      <div className="grid grid-cols-2 place-content-between gap-y-[35%]">
+      <div className="grid grid-cols-2 place-content-between gap-y-[35vh]">
         <div>
           <img src="/homepage-3.svg" className="w-[75%]" />
         </div>
