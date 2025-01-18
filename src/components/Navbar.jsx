@@ -2,9 +2,9 @@ export default function Navbar() {
   return (
     <nav className="navbar w-full flex justify-between py-[2vh] lg:px-[15%]">
       <div className=" navbar-start w-min flex space-x-[30%]">
-        <button className="font-medium hover:text-white transition">Home</button>
-        <button className="font-medium hover:text-white transition">About</button>
-        <button className="font-medium hover:text-white transition">Contact</button>
+        <a href='/' className="font-medium hover:text-white transition">Home</a>
+        <a href='/about' className="font-medium hover:text-white transition">About</a>
+        <a href='/contact' className="font-medium hover:text-white transition">Contact</a>
       </div>
 
       <a 
