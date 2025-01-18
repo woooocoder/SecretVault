@@ -1,17 +1,19 @@
 export default function Navbar() {
   return (
-    <nav className=" navbar w-full flex justify-between py-[2vh] px-[10%]">
-      <div className=" navbar-start flex space-x-[10%]">
+    <nav className="navbar w-full flex justify-between py-[2vh] lg:px-[15%]">
+      <div className=" navbar-start w-min flex space-x-[30%]">
         <button className="font-medium hover:text-white transition">Home</button>
         <button className="font-medium hover:text-white transition">About</button>
         <button className="font-medium hover:text-white transition">Contact</button>
       </div>
 
-      <button className="navbar-center font-bold text-primary hover:opacity-80 transition">
+      <a 
+        href='/'
+        className="navbar-center w-min text-nowrap font-bold text-primary hover:opacity-80 transition">
         Secret Vault
-      </button>
+      </a>
 
-      <button className="navbar-end font-medium hover:text-white transition">Log In</button>
+      <button className="navbar-end font-medium transition bg-[#111B47] text-nowrap hover:text-white px-[2vw] py-[1vh] rounded-md w-min">Log In</button>
     </nav>
   );
 }

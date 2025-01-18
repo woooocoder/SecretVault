@@ -1,172 +1,190 @@
+import { SiDotenv } from "react-icons/si";
+import { FaCloud } from "react-icons/fa";
 export default function LandingPage() {
-    return (
-        <div className="space-y-[10%] overflow-x-hidden">
-            <div className="mt-[15%] flex justify-between h-min">
-                <div className="flex flex-col mx-[10%]">
-                    <h1 className="font-medium text-3xl mb-[4%]">
-                        <p>
-                            Store & Manage Your
-                        </p>
-                        <p>
-                            Application's Secrets
-                        </p>
-                    </h1>
+  return (
+    <div className="space-y-[30%] mt-[15%]">
+      <div className="flex justify-between overflow-x-hidden w-full">
+        <div className="flex flex-col w-[50%]">
+          <h1 className="font-bold text-4xl mb-[8%]">
+            <p>Store & Manage Your Application's Secrets</p>
+          </h1>
 
-                    <div className="text-primary text-lg font-medium mb-[2%]">
-                        <p>
-                            Keep your environment variables and application secrets
-                        </p>
-                        <p>
-                            safe, organized, and accessible.
-                        </p>
-                    </div>
-                    <div className="text-primary text-lg font-medium mb-[4%]">
-                        <p>
-                            Whether you're working solo or collaborating with a team, our
-                        </p>
+          <div className="text-xl font-medium mb-[4%] text-wrap">
+            <p>
+              Keep your environment variables and application secrets safe,
+              organized, and accessible.
+            </p>
+          </div>
+          <div className="text-xl font-medium mb-[8%]">
+            <p>
+              Whether you're working solo or collaborating with a team, our
+              platform ensures security, efficiency, and seamless integrations
+              to power your projects with confidence.
+            </p>
+          </div>
 
-                        <p>
-                            platform ensures security, efficiency, and seamless
-                        </p>
+          <div className="flex font-semibold space-x-[2vw]">
+            <button className="bg-[#111B47] text-nowrap text-white px-[6vw] py-[1vh] rounded-md shadow-xl">
+              Log In
+            </button>
 
-                        <p>
-                            integrations to power your projects with confidence.
-                        </p>
-                    </div>
-
-                    <div className="flex font-semibold space-x-[2vw]">
-                        <button className="bg-[#111B47] text-nowrap text-white px-[6vw] py-[1vh] rounded-md">
-                            Log In
-                        </button>
-
-                        <button className="bg-white border-2 border-[#111B47] text-[#111B47] px-[6vw] py-[1vh] rounded-md text-nowrap">
-                            Sign Up
-                        </button>
-                    </div>
-                </div>
-
-                <div className="flex items-stretch">
-                    <img src="/homepage-1.svg" className="object-cover w-[60%]"/>
-                </div>
-            </div>
-
-            <div className="flex">
-                <div className="flex flex-col">
-                    <h2 className="font-medium text-2xl">
-                        Safe, Secure & Powerful
-                    </h2>
-
-                    <p>
-                        Protect your application's secrets with enterprise-grade security and an 
-                        intuitive platform. Store, manage, and share environment variables with 
-                        ease, ensuring your projects stay efficient and secure at every stage.
-                    </p>
-
-                    <div className="flex">
-                        <div className="flex flex-col">
-                            <p>IMAGE</p>
-                            <h3>Title Goes Here</h3>
-
-                            <p>
-                                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                                Inventore architecto, nihil nesciunt, error voluptates sint
-                                eligendi modi mollitia.
-                            </p>
-                        </div>
-
-                        <div className="flex flex-col">
-                            <p>IMAGE</p>
-                            <h3>Title Goes Here</h3>
-
-                            <p>
-                                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                                Inventore architecto, nihil nesciunt, error voluptates sint
-                                eligendi modi mollitia.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <img src="/homepage-2.svg" className="w-[50%]" />
-            </div>
-
-            <div className="flex">
-            <img src="/homepage-3.svg" className="w-[50%]" />
-                <div className="flex flex-col">
-                    <h2 className="font-medium text-2xl">Access Management</h2>
-                    <p>
-                        Whether you’re collaborating with a small team or managing a large
-                        organization, RBAC ensures that each user has the right permissions,
-                        nothing more and nothing less.
-                    </p>
-
-                    <p>
-                        <strong>Admin:</strong> Full control over the environment, including adding/removing 
-                        users, managing roles, and accessing all variables.
-                    </p>
-
-                    <p>
-                        <strong>Contributor:</strong> Can create, edit, and delete environment variables but cannot manage user 
-                        permissions or roles.
-                    </p>
-
-                    <p>
-                        <strong>Read-Only:</strong> Can view environment variables but cannot modify or delete them.
-                    </p>
-                </div>
-            </div>
-
-            <div className="flex">
-            <img src="/homepage-4.svg" className="w-[50%]" />
-                <div className="flex flex-col">
-                    <h2 className="font-medium text-2xl">Version Control & Backups</h2>
-                    <p>
-                        <strong>Audit Logs:</strong> Stay informed with detailed logs that track every 
-                        action taken on your environment variables—whether it’s an 
-                        update, deletion, or access. Gain transparency into who made
-                         changes and when, ensuring accountability and compliance.
-                    </p>
-
-                    <p>
-                        <strong>Admin:</strong> Full control over the environment, including adding/removing 
-                        users, managing roles, and accessing all variables.
-                    </p>
-
-                    <p>
-                        <strong>Variable History:</strong> View past values, compare changes, and gain insights
-                        into how your configuration has evolved over time.
-                    </p>
-
-                    <p>
-                        <strong>Rollback Capability:</strong> Instantly roll back to any previous version of a variable with
-                         just a few clicks, minimizing downtime and errors in your applications.
-                    </p>
-                </div>
-            </div>
-
-            <div className="flex">
-                <img src="/homepage-5.svg" className="w-[50%]" />
-                <div className="flex flex-col">
-                    <h2 className="font-medium text-2xl">API & Cloud Integration</h2>
-                    
-                    <p>
-                        <strong>Fetch, update and manage</strong> your environment variables programmatically with
-                        our robust API.
-                    </p>
-
-                    <p>
-                        <strong>Integrate</strong> with CI/CD pipelines like Jenkins, GitHub Actions or GitLab CI.
-                    </p>
-
-                    <p>
-                        <strong>Multi-Cloud Ready</strong> Extend support to other cloud platforms
-                        like Azure and Google Cloud to centralize secret management 
-                        across environments.
-                    </p>
-
-                    <button>Get Started</button>
-                </div>
-            </div>
-
+            <button className="bg-white border-2 border-[#111B47] text-[#111B47] px-[6vw] py-[1vh] rounded-md text-nowrap shadow-xl">
+              Sign Up
+            </button>
+          </div>
         </div>
-    )
+
+        <img src="/homepage-1.svg" className="w-[35%]" />
+      </div>
+
+      <div className="flex justify-between w-full">
+        <div className="flex flex-col w-[50%]">
+          <h2 className="font-semibold text-3xl mb-[8%]">
+            Safe, Secure & Powerful
+          </h2>
+
+          <p className="mb-[8%] text-lg">
+            Protect your application's secrets with enterprise-grade security
+            and an intuitive platform. Store, manage, and share environment
+            variables with ease, ensuring your projects stay efficient and
+            secure at every stage.
+          </p>
+
+          <div className="flex">
+            <div className="flex flex-col space-y-[4%] mr-[4%]">
+              <SiDotenv size={30} />
+              <h3>
+                <strong>Environment Variables</strong>
+              </h3>
+
+              <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Inventore architecto, nihil nesciunt.
+              </p>
+            </div>
+
+            <div className="flex flex-col space-y-[4%]">
+              <FaCloud size={30} />
+              <h3>
+                <strong>Cloud Storage</strong>
+              </h3>
+
+              <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Inventore architecto, nihil nesciunt, error voluptates sint.
+              </p>
+            </div>
+          </div>
+        </div>
+        <img src="/homepage-2.svg" className="w-[35%]" />
+      </div>
+
+      <div className="grid grid-cols-2 place-content-between gap-y-[35%]">
+        <div>
+          <img src="/homepage-3.svg" className="w-[75%]" />
+        </div>
+
+        <div className="flex flex-col">
+          <h2 className="font-semibold text-3xl mb-[8%]">Access Management</h2>
+          <p className="mb-[8%] text-lg">
+            Whether you’re collaborating with a small team or managing a large
+            organization, RBAC ensures that each user has the right permissions,
+            nothing more and nothing less.
+          </p>
+
+          <ul className="space-y-[2%] text-lg">
+            <li>
+              <strong>Admin:</strong> Full control over the environment,
+              including adding/removing users, managing roles, and accessing all
+              variables.
+            </li>
+
+            <li>
+              <strong>Contributor:</strong> Can create, edit, and delete
+              environment variables but cannot manage user permissions or roles.
+            </li>
+
+            <li>
+              <strong>Read-Only:</strong> Can view environment variables but
+              cannot modify or delete them.
+            </li>
+          </ul>
+        </div>
+        
+        <div>
+            <img src="/homepage-4.svg" className="w-[75%]" />
+        </div>
+
+        <div className="flex justify-between w-full">
+          <div className="w-0"></div>
+          <div className="flex flex-col">
+            <h2 className="font-semibold text-3xl mb-[8%]">
+              Version Control & Backups
+            </h2>
+            <ul className="space-y-[2%] text-lg">
+              <li>
+                <strong>Audit Logs:</strong> Stay informed with detailed logs
+                that track every action taken on your environment
+                variables—whether it’s an update, deletion, or access. Gain
+                transparency into who made changes and when, ensuring
+                accountability and compliance.
+              </li>
+
+              <li>
+                <strong>Admin:</strong> Full control over the environment,
+                including adding/removing users, managing roles, and accessing
+                all variables.
+              </li>
+
+              <li>
+                <strong>Variable History:</strong> View past values, compare
+                changes, and gain insights into how your configuration has
+                evolved over time.
+              </li>
+
+              <li>
+                <strong>Rollback Capability:</strong> Instantly roll back to any
+                previous version of a variable with just a few clicks,
+                minimizing downtime and errors in your applications.
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div>
+            <img src="/homepage-5.svg" className="w-[75%]" />
+        </div>
+
+        <div className="flex">
+          <div className="flex flex-col">
+            <h2 className="font-semibold text-3xl mb-[8%]">
+              API & Cloud Integration
+            </h2>
+
+            <ul className="space-y-[2%] text-lg">
+              <li>
+                <strong>Fetch, update and manage</strong> your environment
+                variables programmatically with our robust API.
+              </li>
+
+              <li>
+                <strong>Integrate</strong> with CI/CD pipelines like Jenkins,
+                GitHub Actions or GitLab CI.
+              </li>
+
+              <li>
+                <strong>Multi-Cloud Ready</strong> Extend support to other cloud
+                platforms like Azure and Google Cloud to centralize secret
+                management across environments.
+              </li>
+            </ul>
+
+            <button className="place-self-start mt-[8%] bg-[#111B47] text-nowrap text-white px-[6vw] py-[1vh] rounded-md shadow-xl w-min">
+              Get Started
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
 }

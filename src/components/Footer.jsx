@@ -2,7 +2,7 @@ import { FaGithub, FaFigma, FaLinkedin } from "react-icons/fa"
 import { IoIosMail } from "react-icons/io"
 export default function Footer() {
     return (
-        <footer className="footer footer-center bg-base-200 text-base-content rounded p-10">
+        <footer className="mt-[15%] footer footer-center bg-base-200 text-base-content rounded p-10">
             <nav className="grid grid-flow-col gap-4">
                 <a className="link link-hover">Home</a>
                 <a className="link link-hover">About</a>
