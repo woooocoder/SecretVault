@@ -24,11 +24,11 @@ export default function LandingPage() {
           </div>
 
           <div className="flex font-semibold space-x-[2vw]">
-            <button className="bg-[#111B47] text-nowrap text-white px-[6vw] py-[1vh] rounded-md shadow-xl">
+            <button className="bg-[#111B47] text-nowrap text-white px-[6vw] py-[1vh] rounded-md shadow-xl hover:text-inherit transition">
               Log In
             </button>
 
-            <button className="bg-white border-2 border-[#111B47] text-[#111B47] px-[6vw] py-[1vh] rounded-md text-nowrap shadow-xl">
+            <button className="bg-white border-2 border-[#111B47] text-[#111B47] px-[6vw] py-[1vh] rounded-md text-nowrap shadow-xl hover:text-opacity-30 transition">
               Sign Up
             </button>
           </div>
@@ -179,7 +179,7 @@ export default function LandingPage() {
               </li>
             </ul>
 
-            <button className="place-self-start mt-[8%] bg-[#111B47] text-nowrap text-white px-[6vw] py-[1vh] rounded-md shadow-xl w-min">
+            <button className="place-self-start mt-[8%] bg-[#111B47] text-nowrap text-white px-[6vw] py-[1vh] rounded-md shadow-xl w-min font-medium hover:text-inherit transition">
               Get Started
             </button>
           </div>

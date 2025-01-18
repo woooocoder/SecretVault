@@ -13,7 +13,7 @@ export default function Navbar() {
         Secret Vault
       </a>
 
-      <button className="navbar-end font-medium transition bg-[#111B47] text-nowrap hover:text-white px-[2vw] py-[1vh] rounded-md w-min">Log In</button>
+      <button className="navbar-end font-medium transition bg-[#111B47] text-nowrap text-white hover:text-inherit px-[2vw] py-[1vh] rounded-md w-min">Log In</button>
     </nav>
   );
 }
