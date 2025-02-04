@@ -2,7 +2,7 @@
 - Provide secure storage and management of environment variables
 
 ## Design Docs
-![Figma Whiteboard](https://www.figma.com/board/YMHmNF4FxfBPVN3mrLMWDP/SecretVault-Design-Docs?node-id=0-1&t=E7PBuSf2OhZ4Sg41-1)
+[Figma Whiteboard](https://www.figma.com/board/YMHmNF4FxfBPVN3mrLMWDP/SecretVault-Design-Docs?node-id=0-1&t=E7PBuSf2OhZ4Sg41-1)
 
 ## Technologies
 ### Front End
