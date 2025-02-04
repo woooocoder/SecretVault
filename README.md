@@ -3,7 +3,9 @@
 
 ## Design Docs
 [Figma Whiteboard](https://www.figma.com/board/YMHmNF4FxfBPVN3mrLMWDP/SecretVault-Design-Docs?node-id=0-1&t=E7PBuSf2OhZ4Sg41-1)
+
 [Figma Prototype/Layout](https://www.figma.com/design/2hR3T26Tyb3irolKBJ5JzM/SecretVault-Prototype?node-id=0-88&t=p80n9thzhVugVOHJ-1)
+
 ## Technologies
 ### Front End
      - Vite
