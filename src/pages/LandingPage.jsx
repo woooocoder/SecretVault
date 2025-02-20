@@ -57,24 +57,24 @@ export default function LandingPage() {
 
           <div className="flex">
             <div className="flex flex-col space-y-[4%] mr-[4%]">
-              <SiDotenv size={30} />
-              <h3>
+              <SiDotenv size={40} />
+              <h3 className='text-xl'>
                 <strong>Environment Variables</strong>
               </h3>
 
-              <p>
+              <p className='text-lg'>
                 Lorem ipsum dolor, sit amet consectetur adipisicing elit.
                 Inventore architecto, nihil nesciunt.
               </p>
             </div>
 
             <div className="flex flex-col space-y-[4%]">
-              <FaCloud size={30} />
-              <h3>
+              <FaCloud size={40} />
+              <h3 className='text-xl'>
                 <strong>Cloud Storage</strong>
               </h3>
 
-              <p>
+              <p className='text-lg'>
                 Lorem ipsum dolor, sit amet consectetur adipisicing elit.
                 Inventore architecto, nihil nesciunt, error voluptates sint.
               </p>
