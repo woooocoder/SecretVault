@@ -1,4 +1,7 @@
+import { useNavigate } from "react-router";
+
 export default function Navbar() {
+  const navigate = useNavigate()
   return (
     <nav className="navbar w-full flex justify-between py-[2vh] lg:px-[15%]">
       <div className=" navbar-start w-min flex space-x-[30%]">
@@ -13,7 +16,8 @@ export default function Navbar() {
         Secret Vault
       </a>
 
-      <button className="navbar-end font-medium transition bg-[#111B47] text-nowrap text-white hover:text-inherit px-[2vw] py-[1vh] rounded-md w-min">Log In</button>
+      <button className="navbar-end font-medium transition bg-[#111B47] text-nowrap text-white hover:text-inherit px-[2vw] py-[1vh] rounded-md w-min"
+      onClick={() => navigate('/login')}>Log In</button>
     </nav>
   );
 }

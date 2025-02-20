@@ -1,6 +1,9 @@
+
+import { useNavigate } from 'react-router-dom'
 import { SiDotenv } from "react-icons/si";
 import { FaCloud } from "react-icons/fa";
 export default function LandingPage() {
+  const navigate = useNavigate()
   return (
     <div className="space-y-[30%] mt-[15%]">
       <div className="flex justify-between overflow-x-hidden w-full">
@@ -24,11 +27,13 @@ export default function LandingPage() {
           </div>
 
           <div className="flex font-semibold space-x-[2vw]">
-            <button className="bg-[#111B47] text-nowrap text-white px-[6vw] py-[1vh] rounded-md shadow-xl hover:text-inherit transition">
+            <button className="bg-[#111B47] text-nowrap text-white px-[6vw] py-[1vh] rounded-md shadow-xl hover:text-inherit transition"
+            onClick={() => navigate('/login')}>
               Log In
             </button>
 
-            <button className="bg-white border-2 border-[#111B47] text-[#111B47] px-[6vw] py-[1vh] rounded-md text-nowrap shadow-xl hover:text-opacity-30 transition">
+            <button className="bg-white border-2 border-[#111B47] text-[#111B47] px-[6vw] py-[1vh] rounded-md text-nowrap shadow-xl hover:text-opacity-30 transition"
+            onClick={() => navigate('/signup')}>
               Sign Up
             </button>
           </div>
@@ -179,7 +184,8 @@ export default function LandingPage() {
               </li>
             </ul>
 
-            <button className="place-self-start mt-[8%] bg-[#111B47] text-nowrap text-white px-[6vw] py-[1vh] rounded-md shadow-xl w-min font-medium hover:text-inherit transition">
+            <button className="place-self-start mt-[8%] bg-[#111B47] text-nowrap text-white px-[6vw] py-[1vh] rounded-md shadow-xl w-min font-medium hover:text-inherit transition"
+            onClick={() => navigate('/signup')}>
               Get Started
             </button>
           </div>
