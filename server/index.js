@@ -1,6 +1,16 @@
+require('dotenv').config()
 const express = require('express');
+const mongoose = require('mongoose')
 const app = express();
 const port = 5000;
+
+mongoose.connect(
+    process.env.MONGODB_URI,
+    {
+        useNewUrlParser: true,
+        useUnifiedTopology: true
+    }
+)
 
 app.use(express.static('public'));
 
@@ -12,26 +22,3 @@ app.get('/api/message', (req, res) => {
 app.listen(port, () => {
     console.log(`Server is listening at http://localhost:${port}`);
 });
-
-app.get('/api/login', (req, res) => {
-    const email = req.body.email 
-    const password = req.body.password
-
-    res.json({ email: email, password: password})
-})
-
-app.post('/api/signup', (req, res) => {
-    const firstName = req.body.firstName
-    const lastName = req.body.lastName 
-    const email = req.body.email 
-    const password = req.body.password
-    const confirmPassword = req.body.confirmPassword
-
-    res.json({
-        firstName,
-        lastName,
-        email,
-        password,
-        confirmPassword
-    })
-})
