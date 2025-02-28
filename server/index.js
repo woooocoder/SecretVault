@@ -1,28 +1,22 @@
 require("dotenv").config();
 const cors = require("cors");
 const express = require("express");
-// const mongoose = require("mongoose");
-const port = 5000;
-
+const mongoose = require("mongoose");
+const port = process.env.PORT || 5050
+const uri = process.env.MONGODB_URI || ""
 const auth = require('./api/auth')
 const cicd = require('./api/cicd')
 const logs = require('./api/logs')
 const secrets = require('./api/secrets')
 
-// mongoose.connect(
-//     process.env.MONGODB_URI,
-//     {
-//         useNewUrlParser: true,
-//         useUnifiedTopology: true
-//     }
-// )
-// const db = mongoose.connection
-// db.on("error", (e) => {
-//   console.log(e)
-// })
-// db.once("connected", () => {
-//   console.log("DB connected")
-// })
+mongoose.connect(uri)
+const db = mongoose.connection
+db.on("error", (e) => {
+  console.log(e)
+})
+db.once("connected", () => {
+  console.log("DB connected")
+})
 
 const app = express()
 app.use(express.json())
