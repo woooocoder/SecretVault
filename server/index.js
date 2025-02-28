@@ -1,24 +1,37 @@
-require('dotenv').config()
-const express = require('express');
-const mongoose = require('mongoose')
-const app = express();
+require("dotenv").config();
+const cors = require("cors");
+const express = require("express");
+// const mongoose = require("mongoose");
 const port = 5000;
 
-mongoose.connect(
-    process.env.MONGODB_URI,
-    {
-        useNewUrlParser: true,
-        useUnifiedTopology: true
-    }
-)
+const auth = require('./api/auth')
+const cicd = require('./api/cicd')
+const logs = require('./api/logs')
+const secrets = require('./api/secrets')
 
-app.use(express.static('public'));
+// mongoose.connect(
+//     process.env.MONGODB_URI,
+//     {
+//         useNewUrlParser: true,
+//         useUnifiedTopology: true
+//     }
+// )
+// const db = mongoose.connection
+// db.on("error", (e) => {
+//   console.log(e)
+// })
+// db.once("connected", () => {
+//   console.log("DB connected")
+// })
 
-app.get('/api/message', (req, res) => {
-    const message = 'Hello Geek. This Message is From Server';
-    res.json({ message });
-});
+const app = express()
+app.use(express.json())
+app.use(cors())
+app.use('/api/auth', auth)
+app.use('/api/cicd', cicd)
+app.use('/api/logs', logs)
+app.use('/api/secrets', secrets) 
 
 app.listen(port, () => {
-    console.log(`Server is listening at http://localhost:${port}`);
-});
+  console.log(`Server is listening at http://localhost:${port}`)
+})

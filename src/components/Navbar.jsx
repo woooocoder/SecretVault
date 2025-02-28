@@ -3,7 +3,7 @@ import { useNavigate } from "react-router";
 export default function Navbar() {
   const navigate = useNavigate()
   return (
-    <nav className="navbar w-full flex justify-between py-[2vh] lg:px-[15%]">
+    <nav className="navbar w-full flex justify-between py-[2vh] lg:px-[15%] md:px-[10%]">
       <div className=" navbar-start w-min flex space-x-[30%]">
         <a href='/' className="font-medium hover:text-white transition">Home</a>
         <a href='/about' className="font-medium hover:text-white transition">About</a>

@@ -1,2 +1,8 @@
+const express = require('express') 
+const router = express.Router()
+const { response } = require('express') 
+
 // fetch logs for project: readonly
-app.get('/logs', (req, res) => {})
+router.get('/logs', (req, res) => {})
+
+module.exports = router

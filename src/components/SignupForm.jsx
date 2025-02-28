@@ -65,7 +65,7 @@ const SignupForm = () => {
           </div>
 
           <div>
-            <a className="hover:text-neutral" href="/login">
+            <a className="hover:text-neutral ml-[1%]" href="/login">
               Have An Account? Login
             </a>
           </div>

@@ -1,11 +1,17 @@
+const express = require('express') 
+const router = express.Router()
+const { response } = require('express') 
+
 // get all secrets for a project
-app.get('/', (req, res) => {}) 
+router.get('/', (req, res) => {}) 
 
 // create new secret
-app.post('/:id', (req, res) => {})
+router.post('/:id', (req, res) => {})
 
 // update secret @ id
-app.put('/:id', (req, res) => {})
+router.put('/:id', (req, res) => {})
 
 // delete secret @ id
-app.delete('/:id', (req, res) => {})
+router.delete('/:id', (req, res) => {})
+
+module.exports = router

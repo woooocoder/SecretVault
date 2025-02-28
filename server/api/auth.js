@@ -1,25 +1,28 @@
-app.post('/login', (req, res) => {
+const express = require('express')
+// const User = require('../schemas/User')
+const bcrypt = require('bcrypt') 
+const router = express.Router()
+const { response } = require('express') 
+
+router.post('/login', (req, res) => {
     const email = req.body.email 
     const password = req.body.password
 
     res.json({ email: email, password: password})
 })
 
-app.post('/signup', (req, res) => {
-    const firstName = req.body.firstName
-    const lastName = req.body.lastName 
-    const email = req.body.email 
-    const password = req.body.password
-    const confirmPassword = req.body.confirmPassword
+router.post('/signup', (req, res) => {
+    const { email, password, firstName, lastName } = req.body
 
     res.json({
         firstName,
         lastName,
         email,
-        password,
-        confirmPassword
+        password
     })
 })
 
-app.post('/logout', (req, res) => {})
-app.post('/refresh', (req, res) => {})
+router.post('/logout', (req, res) => {})
+router.post('/refresh', (req, res) => {})
+
+module.exports = router

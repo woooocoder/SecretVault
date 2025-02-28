@@ -1,5 +1,11 @@
+const express = require('express') 
+const router = express.Router()
+const { response } = require('express') 
 // register a webhook for pipeline integration
-app.post('/webhook', (req, res) => {})
+router.post('/webhook', (req, res) => {})
 
 // trigger a sync to pipelines
-app.post('/sync', (req, res) => {})
+router.post('/sync', (req, res) => {})
+
+
+module.exports = router
