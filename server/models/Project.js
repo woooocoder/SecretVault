@@ -1,9 +1,23 @@
-const mongoose = require('mongoose')
+const mongoose = require("mongoose");
 
-const Project = new mongoose.schema({
-    name: String, 
-    createdBy: String, // id of creator
-    collaborators: [String] // list of collaborator ids 
-})
+const Project = new mongoose.Schema({
+    name: {
+        type: String,
+        required: true
+    },
+    createdBy: {
+        type: String,
+        required: true
+    },  
+    collaborators: {
+        type: [String],
+        default: []
+    },  
+    secrets: {
+        type: [mongoose.Schema.Types.ObjectId],
+        ref: "Secret",
+        default: [] 
+    }
+}, { timestamps: true });
 
-module.exports = mongoose.model('Project', Project)
+module.exports = mongoose.model("Project", Project);
