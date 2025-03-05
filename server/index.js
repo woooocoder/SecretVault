@@ -1,3 +1,5 @@
+// Signup route -> create a user in db 
+
 require("dotenv").config();
 const cors = require("cors");
 const express = require("express");
