@@ -1,4 +1,4 @@
-Site deployed ![https://main.d1kucqf0oqt4sh.amplifyapp.com/](here)!
+Site deployed ![https://main.d1kucqf0oqt4sh.amplifyapp.com/]!
 
 Redoing backend with AWS - Lambda, API Gateway, DyanmoDB, IAM
 
