@@ -1,3 +1,9 @@
+Site deployed ![https://main.d1kucqf0oqt4sh.amplifyapp.com/](here)!
+
+Redoing backend with AWS - Lambda, API Gateway, DyanmoDB, IAM
+
+
+
 # SecretVault
 - Provide secure storage and management of environment variables
 
